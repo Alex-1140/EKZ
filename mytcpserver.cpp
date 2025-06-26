@@ -53,7 +53,7 @@ connect - Это статический метод класса QObject, кот�
 
 void mytcpserver::slotNewConnection(){
 
-    if (mTcpSocket.size() >= 2)
+    if (mTcpSocket.size() >= 3)
     {
         QTcpSocket *news = mTcpServer->nextPendingConnection();
         news->write("Server is busy.\r\n");
