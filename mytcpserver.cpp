@@ -42,7 +42,7 @@ connect - Это статический метод класса QObject, кот�
 Когда у mTcpServer появится новое подключение, вызови метод slotNewConnection текущего объекта (this)
 */
 
-    if(!mTcpServer->listen(QHostAddress::Any, 33333)){
+    if(!mTcpServer->listen(QHostAddress::Any, 5555 )){
         qDebug() << "server is not started";
     } else {
         qDebug() << "server is started";
